@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', closeMenu);
     });
+    // Mobile menu CTA
+    const mobileCta = nav.querySelector('.mobile-menu-cta');
+    if (mobileCta) mobileCta.addEventListener('click', closeMenu);
 
     // Active nav on scroll
     const sections = document.querySelectorAll('section[id]');
