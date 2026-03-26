@@ -377,17 +377,22 @@ ul{list-style:none}
     .hero-bg-image{
         position:absolute;inset:0;
     }
-    .hero-bg-image img{
-        object-position:65% center;
+    .hero-bg-image img,
+    .hero-bg-image picture{
+        width:100%;height:100%;
+    }
+    .hero-bg-image picture img{
+        width:100%;height:100%;object-fit:cover;
+        object-position:center top;
     }
     .hero-gradient{
         display:block;
         background:linear-gradient(
             0deg,
-            rgba(0,0,0,.92) 0%,
-            rgba(0,0,0,.7) 35%,
-            rgba(0,0,0,.35) 60%,
-            rgba(0,0,0,.15) 100%
+            rgba(0,0,0,.88) 0%,
+            rgba(0,0,0,.6) 30%,
+            rgba(0,0,0,.2) 55%,
+            rgba(0,0,0,.05) 100%
         );
     }
     .hero-container{
