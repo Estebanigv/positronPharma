@@ -1,0 +1,13 @@
+# Source files (not web)
+*.ai
+*.pdf
+*.docx
+1. LOGOTIPO/
+Positron revista/
+.claude/
+
+# Preview images from PDF extraction
+assets/images/pdf_preview_*.png
+assets/images/pdf_img_*.png
+assets/images/pdf_img_*.jpeg
+assets/images/section_*.png

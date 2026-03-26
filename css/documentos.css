@@ -1,0 +1,320 @@
+/* ============================================
+   PositronPharma — Documentos / Flipbook
+   ============================================ */
+
+/* Hero docs */
+.docs-hero{
+    margin-top:76px;
+    background:var(--dark-bg);
+    padding:64px 0 56px;
+    text-align:center;
+}
+.docs-hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(2rem,4vw,3rem);
+    color:var(--white);
+    font-weight:800;
+    margin-bottom:14px;
+}
+.docs-hero p{
+    color:rgba(255,255,255,.6);
+    font-size:1.05rem;
+    max-width:560px;
+    margin:0 auto;
+    line-height:1.7;
+}
+
+/* Upload section */
+.docs-flipbook{
+    padding:60px 0 80px;
+    background:var(--gray-bg);
+    min-height:60vh;
+}
+
+.docs-upload{
+    max-width:640px;
+    margin:0 auto;
+}
+
+.upload-zone{
+    border:2px dashed var(--orange);
+    border-radius:var(--radius-lg);
+    background:var(--white);
+    padding:56px 40px;
+    text-align:center;
+    cursor:pointer;
+    transition:var(--transition);
+}
+.upload-zone:hover,
+.upload-zone.dragover{
+    background:#fff8ef;
+    border-color:var(--orange-dark);
+    transform:translateY(-2px);
+    box-shadow:0 8px 30px rgba(247,147,30,.12);
+}
+
+.upload-icon{
+    margin-bottom:20px;
+}
+.upload-icon svg{
+    width:56px;
+    height:56px;
+}
+
+.upload-zone h3{
+    font-family:'Playfair Display',serif;
+    font-size:1.4rem;
+    color:var(--black);
+    margin-bottom:8px;
+}
+.upload-zone>p{
+    color:var(--text-light);
+    font-size:.95rem;
+    margin-bottom:24px;
+}
+
+.upload-btn{
+    gap:8px;
+    margin-bottom:16px;
+}
+.upload-btn svg{
+    flex-shrink:0;
+}
+
+.upload-hint{
+    display:block;
+    font-size:.8rem;
+    color:var(--text-light);
+    letter-spacing:.3px;
+}
+
+/* ===== FLIPBOOK VIEWER ===== */
+.flipbook-viewer{
+    display:none;
+    flex-direction:column;
+    background:var(--dark-bg);
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    box-shadow:0 12px 40px rgba(0,0,0,.2);
+}
+.flipbook-viewer.active{
+    display:flex;
+}
+
+/* Fullscreen */
+.flipbook-viewer.fullscreen{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    border-radius:0;
+    height:100vh;height:100dvh;
+}
+
+/* Toolbar */
+.flipbook-toolbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 20px;
+    background:#0d0d0d;
+    border-bottom:1px solid rgba(255,255,255,.06);
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.fb-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    color:rgba(255,255,255,.75);
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:.82rem;
+    font-family:inherit;
+    font-weight:500;
+    cursor:pointer;
+    transition:var(--transition);
+}
+.fb-btn:hover{
+    background:var(--orange);
+    border-color:var(--orange);
+    color:var(--white);
+}
+.fb-close:hover{
+    background:#d32f2f;
+    border-color:#d32f2f;
+}
+
+.fb-center{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.fb-nav{
+    width:36px;height:36px;
+    border-radius:50%;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    color:rgba(255,255,255,.8);
+    display:flex;align-items:center;justify-content:center;
+    cursor:pointer;
+    transition:var(--transition);
+}
+.fb-nav:hover{
+    background:var(--orange);
+    border-color:var(--orange);
+    color:var(--white);
+}
+
+.fb-pages{
+    color:rgba(255,255,255,.6);
+    font-size:.85rem;
+    min-width:140px;
+    text-align:center;
+    font-weight:500;
+}
+
+.fb-right{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+/* Stage */
+.flipbook-stage{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:500px;
+    padding:20px;
+    background:var(--dark-bg);
+    position:relative;
+}
+
+.flipbook-viewer.fullscreen .flipbook-stage{
+    min-height:0;
+    height:calc(100vh - 60px);
+    height:calc(100dvh - 60px);
+}
+
+/* Flip page styling */
+.flip-page{
+    background:var(--white);
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+.flip-page-blank{
+    background:#f0f0f0;
+}
+
+/* ===== PROGRESS OVERLAY ===== */
+#progressOverlay{
+    position:fixed;inset:0;
+    background:rgba(0,0,0,.85);
+    z-index:10000;
+    display:flex;align-items:center;justify-content:center;
+}
+.progress-box{
+    text-align:center;
+    color:var(--white);
+}
+.progress-ring-wrap{
+    position:relative;
+    width:120px;height:120px;
+    margin:0 auto 20px;
+}
+.progress-ring{
+    width:100%;height:100%;
+    transform:rotate(-90deg);
+}
+.progress-ring-bg{
+    fill:none;
+    stroke:rgba(255,255,255,.1);
+    stroke-width:8;
+}
+.progress-ring-fill{
+    fill:none;
+    stroke:var(--orange);
+    stroke-width:8;
+    stroke-linecap:round;
+    stroke-dasharray:339.292;
+    transition:stroke-dashoffset .3s ease;
+}
+.progress-ring-pct{
+    position:absolute;
+    inset:0;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--white);
+}
+.progress-text{
+    font-size:.95rem;
+    color:rgba(255,255,255,.7);
+    margin-bottom:12px;
+}
+.progress-dots{
+    display:flex;gap:6px;justify-content:center;
+}
+.progress-dots span{
+    width:6px;height:6px;
+    border-radius:50%;
+    background:var(--orange);
+    animation:dotPulse 1.2s infinite ease-in-out;
+}
+.progress-dots span:nth-child(2){animation-delay:.2s}
+.progress-dots span:nth-child(3){animation-delay:.4s}
+@keyframes dotPulse{
+    0%,80%,100%{opacity:.3;transform:scale(.8)}
+    40%{opacity:1;transform:scale(1.2)}
+}
+
+/* ===== NOTIFICATION ===== */
+.doc-notification{
+    position:fixed;top:80px;left:50%;transform:translateX(-50%);
+    background:var(--orange);color:var(--white);
+    padding:14px 32px;z-index:10001;
+    font-size:.9rem;font-weight:500;
+    border-radius:var(--radius);
+    box-shadow:0 4px 20px rgba(0,0,0,.3);
+    animation:slideNotif .3s ease;
+    max-width:90vw;text-align:center;
+}
+@keyframes slideNotif{
+    from{opacity:0;transform:translateX(-50%) translateY(-10px)}
+    to{opacity:1;transform:translateX(-50%) translateY(0)}
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .docs-hero{padding:48px 0 40px;margin-top:76px}
+    .docs-hero h1{font-size:1.8rem}
+    .docs-flipbook{padding:40px 0 60px}
+
+    .upload-zone{padding:40px 24px}
+    .upload-zone h3{font-size:1.2rem}
+
+    .flipbook-toolbar{padding:10px 12px;gap:8px}
+    .fb-btn-text{display:none}
+    .fb-btn{padding:8px 10px}
+    .fb-pages{font-size:.78rem;min-width:100px}
+    .fb-nav{width:32px;height:32px}
+
+    .flipbook-stage{min-height:400px;padding:12px}
+}
+
+@media(max-width:480px){
+    .docs-hero{padding:36px 0 32px}
+    .docs-hero h1{font-size:1.5rem}
+    .docs-hero p{font-size:.92rem}
+
+    .upload-zone{padding:32px 16px}
+    .upload-icon svg{width:44px;height:44px}
+
+    .flipbook-stage{min-height:320px;padding:8px}
+    .fb-center{gap:8px}
+    .fb-pages{min-width:80px;font-size:.75rem}
+}
