@@ -10,7 +10,7 @@
     text-align:center;
 }
 .docs-hero h1{
-    font-family:'Playfair Display',serif;
+    font-family:'Inter',sans-serif;
     font-size:clamp(2rem,4vw,3rem);
     color:var(--white);
     font-weight:800;
@@ -62,7 +62,7 @@
 }
 
 .upload-zone h3{
-    font-family:'Playfair Display',serif;
+    font-family:'Inter',sans-serif;
     font-size:1.4rem;
     color:var(--black);
     margin-bottom:8px;
