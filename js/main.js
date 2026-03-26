@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Language selector
+    // Language selector — redirects to /en/ or /
     const langToggle = document.getElementById('langToggle');
     const langDropdown = document.getElementById('langDropdown');
     if (langToggle && langDropdown) {
@@ -97,9 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('click', () => langDropdown.classList.remove('open'));
         langDropdown.querySelectorAll('.lang-option').forEach(opt => {
             opt.addEventListener('click', () => {
-                langDropdown.querySelectorAll('.lang-option').forEach(o => o.classList.remove('active'));
-                opt.classList.add('active');
-                langToggle.querySelector('.lang-label').textContent = opt.dataset.lang.toUpperCase();
+                const lang = opt.dataset.lang;
+                const path = window.location.pathname;
+                const isEnglish = path.includes('/en/');
+                if (lang === 'en' && !isEnglish) {
+                    window.location.href = 'en/index.html';
+                } else if (lang === 'es' && isEnglish) {
+                    window.location.href = '../index.html';
+                }
                 langDropdown.classList.remove('open');
             });
         });

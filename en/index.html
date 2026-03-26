@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PositronPharma - Next-generation radiopharmaceuticals for diagnosis through Positron Emission Tomography (PET) in Chile.">
+    <title>PositronPharma | Next-Generation Radiopharmaceuticals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <img src="../assets/images/logo-positron-pharma---GIF.gif" alt="PositronPharma">
+            </a>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#radiopharmaceuticals" class="nav-link">Radiopharmaceuticals</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#innovation" class="nav-link">Innovation</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="../documentos.html" class="nav-link">Documents</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <img src="../assets/images/logo-positron-pharma---GIF-blanco-2.gif" alt="PositronPharma" class="mobile-menu-logo">
+                        <div class="mobile-menu-line"></div>
+                    </div>
+                    <ul class="mobile-menu-links">
+                        <li><a href="#home" class="nav-link active"><span class="mm-num">01</span>Home</a></li>
+                        <li><a href="#about" class="nav-link"><span class="mm-num">02</span>About Us</a></li>
+                        <li><a href="#radiopharmaceuticals" class="nav-link"><span class="mm-num">03</span>Radiopharmaceuticals</a></li>
+                        <li><a href="#products" class="nav-link"><span class="mm-num">04</span>Products</a></li>
+                        <li><a href="#innovation" class="nav-link"><span class="mm-num">05</span>Innovation</a></li>
+                        <li><a href="#faq" class="nav-link"><span class="mm-num">06</span>FAQ</a></li>
+                        <li><a href="../documentos.html" class="nav-link"><span class="mm-num">07</span>Documents</a></li>
+                    </ul>
+                    <div class="mobile-menu-footer">
+                        <a href="#contact" class="btn btn-orange mobile-menu-cta">Contact Us</a>
+                        <div class="mobile-menu-info">
+                            <a href="mailto:contacto@positronpharma.cl">contacto@positronpharma.cl</a>
+                            <a href="tel:+56224205137">+56 2 2420 5137</a>
+                        </div>
+                        <div class="mobile-menu-social">
+                            <a href="https://www.linkedin.com/company/positronpharma" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-actions">
+                <a href="https://www.linkedin.com/company/positronpharma" target="_blank" rel="noopener" class="nav-linkedin" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <div class="nav-lang">
+                    <button class="lang-toggle" id="langToggle" aria-label="Change language">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <span class="lang-label">EN</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option" data-lang="es">Español</button>
+                        <button class="lang-option active" data-lang="en">English</button>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-orange btn-nav-cta">Contact Us</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-overlay" id="navOverlay"></div>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-image">
+            <img src="../assets/images/lab-control-room.jpg" alt="PositronPharma Laboratory">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1><em>Introducing</em><br><strong>High Performance<br>Technology</strong></h1>
+                <p>Our purpose is to deliver radiopharmaceuticals for diagnosis with high precision throughout Chile.</p>
+                <a href="#products" class="btn btn-orange">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ORANGE STATS BAR ========== -->
+    <div class="stats-bar">
+        <div class="container stats-bar-inner">
+            <div class="stat-item">
+                <span class="stat-number">1</span>
+                <span class="stat-label">18MeV Cyclotron</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Automatic Radiosynthesis Modules</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-video fade-in">
+                <div class="video-wrapper">
+                    <iframe src="https://player.vimeo.com/video/247485504?h=0&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="about-text fade-in">
+                <h2>PositronPharma</h2>
+                <p>Since 2010, delivering radiopharmaceuticals for diagnosis through Positron Emission Tomography (PET) technique.</p>
+                <a href="#radiopharmaceuticals" class="btn btn-orange">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RADIOPHARMACEUTICALS ========== -->
+    <section class="section radio-section" id="radiopharmaceuticals">
+        <div class="container radio-grid">
+            <div class="radio-text fade-in">
+                <h2>What are<br>radiopharmaceuticals?</h2>
+                <p>A radiopharmaceutical is any medicinal product for clinical purposes that, when ready for use, contains one or more radionuclides (radioactive isotopes).</p>
+                <a href="#products" class="btn btn-orange">Learn More</a>
+            </div>
+            <div class="radio-img fade-in">
+                <img src="../assets/images/hero-radioactive-label.jpg" alt="Radioactive label">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== UNIQUE CHARACTERISTICS (DARK) ========== -->
+    <section class="section characteristics-dark" id="products">
+        <div class="container">
+            <div class="char-header">
+                <h2><em>Unique</em> Characteristics<br>of Our Products</h2>
+            </div>
+            <div class="char-row">
+                <div class="char-img fade-in">
+                    <img src="../assets/images/hero-radioactive-label.jpg" alt="Diagnostic radiopharmaceuticals">
+                </div>
+                <div class="char-text fade-in">
+                    <h3>Next-generation diagnostic radiopharmaceuticals</h3>
+                    <p>Our products are used for cancer studies and detection of neuroendocrine tumors.</p>
+                    <a href="#contact" class="btn btn-orange">Discover Our Products</a>
+                </div>
+            </div>
+            <div class="char-row char-row-reverse">
+                <div class="char-text fade-in">
+                    <h3>Fast, Safe and Efficient Nationwide Delivery</h3>
+                    <p>We deliver radiopharmaceuticals from Santiago to all of Chile with efficiency and safety.</p>
+                    <a href="#contact" class="btn btn-orange">Order Now</a>
+                </div>
+                <div class="char-img fade-in">
+                    <img src="../assets/images/hero-lab-equipment.jpg" alt="Laboratory equipment">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS & PRODUCTS ========== -->
+    <section class="section results-section">
+        <div class="container results-grid">
+            <div class="results-left fade-in">
+                <h2>Achievements<br>and Impactful<br>Results</h2>
+            </div>
+            <div class="results-cards fade-in">
+                <div class="result-card result-card-orange">
+                    <h4>18F</h4>
+                    <p>The main product is 18F, used to label different compounds.</p>
+                </div>
+                <div class="result-card result-card-orange-light">
+                    <h4>Innovation</h4>
+                    <p>We are pioneers in implementing new diagnostic technology.</p>
+                </div>
+                <div class="result-card result-card-dark">
+                    <h4>68GaDOTATATE</h4>
+                    <p>Used as a somatostatin analogue in neuroendocrine tumors.</p>
+                </div>
+                <div class="result-card result-card-dark">
+                    <h4>68GaPSMA</h4>
+                    <p>Prostate-Specific Membrane Antigen marker in tumor cells in prostate cancer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== INNOVATION (dark) ========== -->
+    <section class="section innovation-dark" id="innovation">
+        <div class="container">
+            <div class="innov-top">
+                <div class="innov-top-text fade-in">
+                    <h2>Committed<br>to <span class="text-orange">Innovation and<br>Continuous</span> Improvement</h2>
+                    <p>We have a complete quality control laboratory and a production laboratory, with automatic radiosynthesis modules inside lead-shielded cells.</p>
+                </div>
+                <div class="innov-top-img fade-in">
+                    <img src="../assets/images/lab-scientist.jpg" alt="Scientist in laboratory">
+                </div>
+            </div>
+            <div class="innov-gallery">
+                <div class="innov-gallery-img fade-in">
+                    <img src="../assets/images/lab-internals.jpg" alt="Equipment internals">
+                </div>
+                <div class="innov-gallery-img fade-in">
+                    <img src="../assets/images/lab-gauges.jpg" alt="Pressure gauges">
+                </div>
+                <div class="innov-gallery-img fade-in">
+                    <img src="../assets/images/lab-scientist.jpg" alt="Quality control">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== QUALITY ========== -->
+    <section class="section quality-section">
+        <div class="container quality-grid">
+            <div class="quality-img fade-in">
+                <img src="../assets/images/lab-syringe.jpg" alt="Laboratory quality">
+            </div>
+            <div class="quality-text fade-in">
+                <h2>Always Ensuring<br>the <span class="text-orange">Highest Quality</span></h2>
+                <p>We strive to guarantee the best quality in all our products and services, providing reliable and accurate results.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TRUST / TESTIMONIAL ========== -->
+    <section class="section trust-section">
+        <div class="container trust-grid">
+            <div class="trust-left fade-in">
+                <h2><em>Why They Trust<br>In Us</em></h2>
+                <p>We have established a solid track record of success over the years, thanks to our commitment to excellence and innovation.</p>
+                <a href="#contact" class="btn btn-orange">Trust Us</a>
+            </div>
+            <div class="trust-right fade-in">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"We have been using PositronPharma products for years. They have always proven to be reliable and accurate."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar"></div>
+                        <span>CLIENT 1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section faq-section" id="faq">
+        <div class="container faq-grid">
+            <div class="faq-left fade-in">
+                <h2>Frequently<br>Asked Questions</h2>
+                <p class="faq-sub">About Our<br>Products and Services</p>
+            </div>
+            <div class="faq-right fade-in">
+                <div class="faq-item active">
+                    <button class="faq-q" aria-expanded="true">
+                        <span>How are radiopharmaceuticals used?</span>
+                        <span class="faq-icon">&mdash;</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>PositronPharma supplies radiopharmaceuticals for cancer diagnosis through positron emission tomography. Our main product is 18F, used in various compounds.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>Are they available for nationwide delivery?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes, we deliver radiopharmaceuticals from Santiago to all of Chile with efficiency and safety, ensuring product quality throughout the entire transport process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>What safety do the products offer?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We have a complete quality control laboratory and a production laboratory with automatic radiosynthesis modules inside lead-shielded cells, meeting the strictest standards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        <span>What is the delivery time?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Our delivery times are optimized to ensure that radiopharmaceuticals arrive in the best conditions. Contact our team for specific information based on your location.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact-section" id="contact">
+        <div class="contact-bg">
+            <div class="container contact-grid">
+                <div class="contact-form-col fade-in">
+                    <h2>Contact Us</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Name</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Email</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Message</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-orange">Send</button>
+                    </form>
+                </div>
+                <div class="contact-map-col fade-in">
+                    <div class="contact-map-wrapper">
+                        <img src="../assets/images/map-santiago.jpg" alt="Location Santiago">
+                    </div>
+                </div>
+            </div>
+            <div class="contact-orange-block"></div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="../assets/images/logo-positron-pharma---GIF-blanco-2.gif" alt="PositronPharma" class="footer-logo">
+                <p>Since 2010, delivering radiopharmaceuticals for diagnosis through Positron Emission Tomography (PET) technique.</p>
+                <div class="footer-contact-info">
+                    <a href="mailto:contacto@positronpharma.cl">contacto@positronpharma.cl</a>
+                    <a href="tel:+56224205137">+56 2 2420 5137</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#radiopharmaceuticals">Radiopharmaceuticals</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#innovation">Innovation</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../documentos.html">Documents</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/positronpharma" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 PositronPharma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
